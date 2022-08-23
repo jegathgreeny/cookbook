@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "allauth",
     "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.github",
     # my apps
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
@@ -127,6 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+# static files config
 STATIC_URL = "static/"
 # The list of places to look for static files.
 STATICFILES_DIRS = [BASE_DIR / "static"]
@@ -162,3 +165,4 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'
