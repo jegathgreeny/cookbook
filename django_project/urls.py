@@ -19,11 +19,8 @@ from django.urls import include, path
 urlpatterns = [
     # django admin
     path("admin/", admin.site.urls),
-    # user management
-    # this is for the default stuff
-    path("accounts/", include("django.contrib.auth.urls")),
+    # user management (using allauth)
+    path("accounts/", include("allauth.urls")),
     # my apps
-    # this is for the signup stuff created from scratch
-    path("accounts/", include("accounts.urls")),
     path("", include("pages.urls")),
 ]
