@@ -2,6 +2,25 @@
 {% load static %}
 
 {% block content %}
-    <h1>spear</h1>
-    <img class="cover" src="{% static 'images/mint.jpg' %}">
+    
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/mint.jpg' %}" class="d-block w-100" alt="not available">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/oregano.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/thyme.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/rosemary.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/basil.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
 {% endblock content %}

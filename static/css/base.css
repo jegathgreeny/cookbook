@@ -7,3 +7,19 @@ h1 {
     width: auto;
 }
 
+.button {
+    border-radius: 25px;
+}
+
+.login_complete {
+    /*padding: 15px 16px;*/
+    height: auto;
+    /*border: 1px solid var(--hariline-color);*/
+    /*border-radius: 4px;*/
+    justify-content: center;
+    /*overflow: hidden;*/
+    text-align: center;
+    width: 28em;
+    margin: 100px;
+    height: auto;
+}

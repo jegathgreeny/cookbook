@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.github",
+    "allauth.socialaccount.providers.google",
     # my apps
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
